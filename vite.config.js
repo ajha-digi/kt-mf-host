@@ -6,12 +6,14 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "demo-host-app",
+      name: "demo_host_app",
       filename: "remoteEntry.js",
       remotes: {
         demo_remote_app:"http://localhost:4040/assets/remoteEntry.js"
       },
-      exposes: {},
+      exposes: {
+        "./link":"./src/Link.jsx"
+      },
       shared: ["react", "react-dom"],
     }),
   ],

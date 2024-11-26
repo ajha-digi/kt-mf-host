@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
-      <Test />
+      <Test data="data from host for text" />
       <TestButton />
     </>
   )
