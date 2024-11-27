@@ -14,7 +14,7 @@ export default defineConfig({
       exposes: {
         "./link":"./src/Link.jsx"
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", "react-redux"],
     }),
   ],
 
